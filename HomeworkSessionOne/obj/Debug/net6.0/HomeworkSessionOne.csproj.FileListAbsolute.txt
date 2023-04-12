@@ -1,0 +1,15 @@
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeworkSessionOne\bin\Debug\net6.0\HomeworkSessionOne.exe
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeworkSessionOne\bin\Debug\net6.0\HomeworkSessionOne.deps.json
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeworkSessionOne\bin\Debug\net6.0\HomeworkSessionOne.runtimeconfig.json
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeworkSessionOne\bin\Debug\net6.0\HomeworkSessionOne.dll
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeworkSessionOne\bin\Debug\net6.0\HomeworkSessionOne.pdb
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeworkSessionOne\obj\Debug\net6.0\HomeworkSessionOne.csproj.AssemblyReference.cache
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeworkSessionOne\obj\Debug\net6.0\HomeworkSessionOne.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeworkSessionOne\obj\Debug\net6.0\HomeworkSessionOne.AssemblyInfoInputs.cache
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeworkSessionOne\obj\Debug\net6.0\HomeworkSessionOne.AssemblyInfo.cs
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeworkSessionOne\obj\Debug\net6.0\HomeworkSessionOne.csproj.CoreCompileInputs.cache
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeworkSessionOne\obj\Debug\net6.0\HomeworkSessionOne.dll
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeworkSessionOne\obj\Debug\net6.0\refint\HomeworkSessionOne.dll
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeworkSessionOne\obj\Debug\net6.0\HomeworkSessionOne.pdb
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeworkSessionOne\obj\Debug\net6.0\HomeworkSessionOne.genruntimeconfig.cache
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeworkSessionOne\obj\Debug\net6.0\ref\HomeworkSessionOne.dll
