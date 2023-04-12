@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeeSharpTraining", "SeeSharpTraining\SeeSharpTraining.csproj", "{EC4B6FF0-576B-46F4-BF3B-2355EB97A4EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC4B6FF0-576B-46F4-BF3B-2355EB97A4EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC4B6FF0-576B-46F4-BF3B-2355EB97A4EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC4B6FF0-576B-46F4-BF3B-2355EB97A4EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC4B6FF0-576B-46F4-BF3B-2355EB97A4EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C967C216-47A3-4FC4-AC2C-749F68031F78}
+	EndGlobalSection
+EndGlobal
