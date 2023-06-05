@@ -1,0 +1,15 @@
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionFour\obj\Debug\net6.0\HomeWorkSessionFour.csproj.AssemblyReference.cache
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionFour\obj\Debug\net6.0\HomeWorkSessionFour.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionFour\obj\Debug\net6.0\HomeWorkSessionFour.AssemblyInfoInputs.cache
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionFour\obj\Debug\net6.0\HomeWorkSessionFour.AssemblyInfo.cs
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionFour\obj\Debug\net6.0\HomeWorkSessionFour.csproj.CoreCompileInputs.cache
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionFour\bin\Debug\net6.0\HomeWorkSessionFour.exe
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionFour\bin\Debug\net6.0\HomeWorkSessionFour.deps.json
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionFour\bin\Debug\net6.0\HomeWorkSessionFour.runtimeconfig.json
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionFour\bin\Debug\net6.0\HomeWorkSessionFour.dll
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionFour\bin\Debug\net6.0\HomeWorkSessionFour.pdb
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionFour\obj\Debug\net6.0\HomeWorkSessionFour.dll
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionFour\obj\Debug\net6.0\refint\HomeWorkSessionFour.dll
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionFour\obj\Debug\net6.0\HomeWorkSessionFour.pdb
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionFour\obj\Debug\net6.0\HomeWorkSessionFour.genruntimeconfig.cache
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionFour\obj\Debug\net6.0\ref\HomeWorkSessionFour.dll
