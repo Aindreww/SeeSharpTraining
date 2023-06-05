@@ -68,5 +68,6 @@
             var selectedParticipants = participants.Where(p => p.IdentiticationNumber >= start && p.IdentiticationNumber <= end);
             return selectedParticipants.Average(p => p.Score);
         }
+
     }
 }
