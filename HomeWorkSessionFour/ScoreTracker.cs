@@ -2,41 +2,23 @@
 {
     public class ScoreTracker
     {
-        public List<Participants> MyParticipants;
-
-        public ScoreTracker()
-        {
-            MyParticipants = new List<Participants>();
-        }
+        private List<Participants> participants = new List<Participants>();
 
         public void AddParticipant(string name, int score, int id)
         {
-            Participants participant = new Participants
-            {
-                Name = name,
-                Score = score,
-                IdentiticationNumber = id
-            };
-            MyParticipants.Add(participant);
+            participants.Add(new Participants { Name = name, Score = score, IdentiticationNumber = id });
         }
 
         public void AddParticipantAtPosition(string name, int score, int id, int position)
         {
-            Participants participant = new Participants
-            {
-                Name = name,
-                Score = score,
-                IdentiticationNumber = id
-            };
-
-            MyParticipants.Insert(position, participant);
+            participants.Insert(position, new Participants { Name = name, Score = score, IdentiticationNumber = id });
         }
 
         public void DeleteParticipantAtPosition(int position)
         {
-            if (position >= 0 && position < MyParticipants.Count)
+            if (position >= 0 && position < participants.Count)
             {
-                MyParticipants.RemoveAt(position);
+                participants.RemoveAt(position);
             }
             else
             {
@@ -46,7 +28,7 @@
 
         public void ModifyParticipantScore(int id, int newScore)
         {
-            Participants participant = MyParticipants.Find(p => p.IdentiticationNumber == id);
+            Participants participant = participants.Find(p => p.IdentiticationNumber == id);
             if (participant != null)
             {
                 participant.Score = newScore;
@@ -59,8 +41,7 @@
 
         public void PrintParticipantsWithScoreLessThan(int score)
         {
-            var filteredParticipants = MyParticipants.Where(p => p.Score < score);
-            foreach (var participant in filteredParticipants)
+            foreach (var participant in participants.Where(p => p.Score < score))
             {
                 Console.WriteLine($"Name: {participant.Name}, Score: {participant.Score}");
             }
@@ -68,8 +49,7 @@
 
         public void PrintParticipantsByScoreAscending()
         {
-            var sortedParticipants = MyParticipants.OrderBy(p => p.Score);
-            foreach (var participant in sortedParticipants)
+            foreach (var participant in participants.OrderBy(p => p.Score))
             {
                 Console.WriteLine($"Name: {participant.Name}, Score: {participant.Score}");
             }
@@ -77,8 +57,7 @@
 
         public void PrintParticipantsWithScoreGreaterThan(int score)
         {
-            var filteredParticipants = MyParticipants.Where(p => p.Score > score).OrderBy(p => p.Score);
-            foreach (var participant in filteredParticipants)
+            foreach (var participant in participants.Where(p => p.Score > score).OrderBy(p => p.Score))
             {
                 Console.WriteLine($"Name: {participant.Name}, Score: {participant.Score}");
             }
@@ -86,11 +65,8 @@
 
         public double CalculateArithmeticMean(int start, int end)
         {
-            var selectedParticipants = MyParticipants.Where(p => p.IdentiticationNumber >= start && p.IdentiticationNumber <= end);
-            int sum = selectedParticipants.Sum(p => p.Score);
-            int count = selectedParticipants.Count();
-            return (double)sum / count;
+            var selectedParticipants = participants.Where(p => p.IdentiticationNumber >= start && p.IdentiticationNumber <= end);
+            return selectedParticipants.Average(p => p.Score);
         }
-
     }
 }
