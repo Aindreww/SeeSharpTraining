@@ -1,0 +1,15 @@
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionSix\bin\Debug\net6.0\HomeWorkSessionSix.exe
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionSix\bin\Debug\net6.0\HomeWorkSessionSix.deps.json
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionSix\bin\Debug\net6.0\HomeWorkSessionSix.runtimeconfig.json
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionSix\bin\Debug\net6.0\HomeWorkSessionSix.dll
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionSix\bin\Debug\net6.0\HomeWorkSessionSix.pdb
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionSix\obj\Debug\net6.0\HomeWorkSessionSix.csproj.AssemblyReference.cache
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionSix\obj\Debug\net6.0\HomeWorkSessionSix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionSix\obj\Debug\net6.0\HomeWorkSessionSix.AssemblyInfoInputs.cache
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionSix\obj\Debug\net6.0\HomeWorkSessionSix.AssemblyInfo.cs
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionSix\obj\Debug\net6.0\HomeWorkSessionSix.csproj.CoreCompileInputs.cache
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionSix\obj\Debug\net6.0\HomeWorkSessionSix.dll
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionSix\obj\Debug\net6.0\refint\HomeWorkSessionSix.dll
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionSix\obj\Debug\net6.0\HomeWorkSessionSix.pdb
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionSix\obj\Debug\net6.0\HomeWorkSessionSix.genruntimeconfig.cache
+C:\Users\Aindrew\source\repos\SeeSharpTraining\HomeWorkSessionSix\obj\Debug\net6.0\ref\HomeWorkSessionSix.dll
