@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWorkSessionThree", "Hom
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWorkSessionFour", "HomeWorkSessionFour\HomeWorkSessionFour.csproj", "{529C1C77-B407-4795-91D4-6A6687FC5216}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWorkSessionSix", "HomeWorkSessionSix\HomeWorkSessionSix.csproj", "{3BAFCC20-4A22-47DD-910B-193FBAEE5E61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWorkSessionSix", "HomeWorkSessionSix\HomeWorkSessionSix.csproj", "{3BAFCC20-4A22-47DD-910B-193FBAEE5E61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{460F0E22-7239-428B-9AD5-AF35D4735627}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWorkSessionSix.NunitTests", "tests\HomeWorkSessionSix.NunitTests\HomeWorkSessionSix.NunitTests.csproj", "{97B5DE4E-2665-4027-BFEB-C10B0A3261DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +43,16 @@ Global
 		{3BAFCC20-4A22-47DD-910B-193FBAEE5E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BAFCC20-4A22-47DD-910B-193FBAEE5E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BAFCC20-4A22-47DD-910B-193FBAEE5E61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97B5DE4E-2665-4027-BFEB-C10B0A3261DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97B5DE4E-2665-4027-BFEB-C10B0A3261DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97B5DE4E-2665-4027-BFEB-C10B0A3261DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97B5DE4E-2665-4027-BFEB-C10B0A3261DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{97B5DE4E-2665-4027-BFEB-C10B0A3261DE} = {460F0E22-7239-428B-9AD5-AF35D4735627}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C967C216-47A3-4FC4-AC2C-749F68031F78}

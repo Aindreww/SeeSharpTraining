@@ -5,6 +5,8 @@
         private List<Animal> animals;
         private List<ZooWorkers> workers;
         private TicketSellers ticketSeller;
+        private TicketCounterSession7Homework ticketCounter;
+        private AnimalFeederSession7Homework animalFeeder;
 
         public Zoo()
         {
@@ -12,7 +14,16 @@
             workers = new List<ZooWorkers>();
             ticketSeller = new TicketSellers { Name = "Barney" };
             workers.Add(ticketSeller);
+            ticketCounter = new TicketCounterSession7Homework { Name = "Barney" };
+            animalFeeder = new AnimalFeederSession7Homework { Name = "John" };
+
+            workers.Add(ticketCounter);
+            workers.Add(animalFeeder);
+
+
         }
+
+       
 
         public void AddAnimal(string name, string food)
         {
@@ -23,6 +34,7 @@
                 IsFed = false
             };
             animals.Add(animal);
+
         }
 
         public void AddWorker(string name)
@@ -55,6 +67,7 @@
                 {
                     ZooWorkers worker = workers.Find(w => w is not TicketSellers); 
                     worker.FeedAnimal(animal);
+                    animalFeeder.FeedAnimals(animals);
                 }
             }
         }
@@ -62,6 +75,7 @@
         public void SellTicket()
         {
             ticketSeller.SellTicket();
+            ticketCounter.SellTicket();
         }
 
         public void DisplayTicketsSold()
@@ -70,9 +84,15 @@
         }
 
 
+        public List<Animal> GetAnimals()
+        {
+            return animals;
+        }
 
-
-
+        public int GetTicketsSold()
+        {
+            return ticketCounter.TicketsSold;
+        }
 
 
     }
