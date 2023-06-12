@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\HomeWorkDotNetBasic1.props" />
+</Project>

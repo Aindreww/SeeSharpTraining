@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWorkSessionSix", "HomeW
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{460F0E22-7239-428B-9AD5-AF35D4735627}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWorkSessionSix.NunitTests", "tests\HomeWorkSessionSix.NunitTests\HomeWorkSessionSix.NunitTests.csproj", "{97B5DE4E-2665-4027-BFEB-C10B0A3261DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWorkSessionSix.NunitTests", "tests\HomeWorkSessionSix.NunitTests\HomeWorkSessionSix.NunitTests.csproj", "{97B5DE4E-2665-4027-BFEB-C10B0A3261DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWorkDotNetBasic1", "HomeWorkDotNetBasic1\HomeWorkDotNetBasic1.csproj", "{95379D07-A974-447A-9B4E-7CBD721B5239}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{97B5DE4E-2665-4027-BFEB-C10B0A3261DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97B5DE4E-2665-4027-BFEB-C10B0A3261DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97B5DE4E-2665-4027-BFEB-C10B0A3261DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95379D07-A974-447A-9B4E-7CBD721B5239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95379D07-A974-447A-9B4E-7CBD721B5239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95379D07-A974-447A-9B4E-7CBD721B5239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95379D07-A974-447A-9B4E-7CBD721B5239}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
