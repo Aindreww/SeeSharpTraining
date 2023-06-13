@@ -53,7 +53,7 @@ namespace HomeworkDotNetBasicThree
             var orderedTeams = teams.OrderByDescending(team => team.EstablishedYear);
             var selectedTeams = teams.Select(team => new { team.Name, team.Country });
 
-            // Print or further process the query results if needed
+            
             Console.WriteLine("Filtered Teams:");
             foreach (var team in filteredTeams)
             {
