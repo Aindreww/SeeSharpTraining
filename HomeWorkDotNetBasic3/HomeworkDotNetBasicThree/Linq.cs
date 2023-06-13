@@ -42,7 +42,7 @@ namespace HomeworkDotNetBasicThree
 
             return teams;
         }
-
+        
         private void PerformLinqQueries(List<Team> teams)
         {
             var filteredTeams = teams.Where(team => team.EstablishedYear > 2000);
