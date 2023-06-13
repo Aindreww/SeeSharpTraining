@@ -1,11 +1,9 @@
-﻿namespace WebApplication1.DataAccessLayer.Repositories
-{
+﻿namespace WebApplication1.DataAccessLayer.Repositories {
     using Microsoft.EntityFrameworkCore;
 
     using WebApplication1.Entities;
 
-    public class HotelRepository : IHotelRepository
-    {
+    public class HotelRepository : IHotelRepository {
         private readonly DataContext dataContext;
 
         public HotelRepository(DataContext dataContext)
@@ -41,6 +39,11 @@
         {
             this.dataContext.Hotels.Remove(hotel);
             await this.dataContext.SaveChangesAsync();
+        }
+
+        public async Task<List<Hotel>> GetAllActiveHotels()
+        {
+            return await this.dataContext.Hotels.Where(x => !x.IsDeleted).ToListAsync();
         }
     }
 }

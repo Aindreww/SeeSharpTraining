@@ -1,7 +1,5 @@
-﻿namespace WebApplication1.Entities
-{
-    public class Reservation : BaseEntity
-    {
+﻿namespace WebApplication1.Entities {
+    public class Reservation : BaseEntity {
         public string CustomerName { get; set; } = default!;
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }

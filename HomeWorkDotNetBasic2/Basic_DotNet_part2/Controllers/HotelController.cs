@@ -1,15 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace WebApplication1.Controllers
-{
+namespace WebApplication1.Controllers {
     using WebApplication1.DataTransferObject;
     using WebApplication1.Exceptions;
     using WebApplication1.Services;
 
     [ApiController]
     [Route("api/hotels")]
-    public class HotelController : ControllerBase
-    {
+    public class HotelController : ControllerBase {
         private readonly IHotelService hotelService;
 
         public HotelController(IHotelService hotelService)
@@ -25,6 +23,19 @@ namespace WebApplication1.Controllers
             await this.hotelService.AddHotel(hotelDto);
 
             return this.Ok();
+        }
+
+        // Update hotel by id
+        // If entity is deleted, this endpoint will reactivate it 
+        // Doesn't check if the hotel exists. In such case, makes a new hotel
+        // TODO: Reject updating if isDeleted = 1 and make another endpoint to reactivate it
+        [HttpPut]
+        [Route("UpdateHotelById")] // api/hotel/1
+        public async Task<IActionResult> UpdateHotel(int id, [FromBody] HotelDto hotelDto)
+        {
+            var updatedHotel = await this.hotelService.UpdateHotel(id, hotelDto);
+
+            return this.Ok(updatedHotel);
         }
 
         // Get a specific hotel based on id
@@ -47,6 +58,19 @@ namespace WebApplication1.Controllers
             }
         }
 
+        // Get all active hotels
+        [HttpGet]
+        [Route("GetAllActiveHotels")]  // api/getallactivehotels
+        public async Task<IActionResult> GetAllActiveHotels()
+        {
+            var restultHotels = await this.hotelService.GetAllActiveHotels();
+            if (restultHotels.Count == 0)
+            {
+                return this.NoContent();
+            }
+            return this.Ok(restultHotels);
+        }
+
         // Delete a specific hotel
         [HttpDelete]
         [Route("DeleteHotel")]
@@ -55,7 +79,7 @@ namespace WebApplication1.Controllers
             try
             {
                 await this.hotelService.RemoveHotelById(id);
-                
+
                 return this.Ok();
             }
             catch (NotFoundException ex)
@@ -108,7 +132,5 @@ namespace WebApplication1.Controllers
 
         //    return NoContent();
         //}
-
-
     }
 }

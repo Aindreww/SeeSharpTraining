@@ -2,10 +2,8 @@
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using WebApplication1.Entities;
 
-namespace WebApplication1.DataAccessLayer
-{
-    public class DataContext : DbContext
-    {
+namespace WebApplication1.DataAccessLayer {
+    public class DataContext : DbContext {
         private readonly IConfiguration configuration;
 
         // Set the tables for our Database
@@ -44,6 +42,10 @@ namespace WebApplication1.DataAccessLayer
             return await base.SaveChangesAsync();
         }
 
-
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Hotel>()
+                .HasKey(ma => ma.Id);
+        }
     }
 }

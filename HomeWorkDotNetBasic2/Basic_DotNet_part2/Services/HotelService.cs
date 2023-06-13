@@ -1,12 +1,10 @@
-﻿namespace WebApplication1.Services
-{
+﻿namespace WebApplication1.Services {
     using WebApplication1.DataAccessLayer.Repositories;
     using WebApplication1.DataTransferObject;
     using WebApplication1.Entities;
     using WebApplication1.Exceptions;
 
-    public class HotelService : IHotelService
-    {
+    public class HotelService : IHotelService {
         private readonly IHotelRepository hotelRepository;
 
         public HotelService(IHotelRepository hotelRepository)
@@ -44,6 +42,24 @@
             await this.hotelRepository.DeleteAsync(hotel);
         }
 
+        public async Task<HotelDto> UpdateHotel(int id, HotelDto hotelDto)
+        {
+            var updatedHotel = MapHotelData(id, hotelDto);
+            await this.hotelRepository.UpdateAsync(updatedHotel);
+            return MapHotelData(updatedHotel);
+        }
+
+        public async Task<IList<HotelDto>> GetAllActiveHotels()
+        {
+            List<HotelDto> resultHotels = new List<HotelDto>();
+            var activeHotels = await this.hotelRepository.GetAllActiveHotels();
+            foreach (var hotel in activeHotels)
+            {
+                resultHotels.Add(MapHotelData(hotel));
+            }
+            return resultHotels;
+        }
+
         private Hotel MapHotelData(HotelDto hotelDto)
         {
             return new Hotel
@@ -60,6 +76,19 @@
         {
             return new HotelDto
             {
+                Name = hotel.Name,
+                City = hotel.City,
+                Country = hotel.Country,
+                Description = hotel.Description,
+                Stars = hotel.Stars
+            };
+        }
+
+        private Hotel MapHotelData(int id, HotelDto hotel)
+        {
+            return new Hotel
+            {
+                Id = id,
                 Name = hotel.Name,
                 City = hotel.City,
                 Country = hotel.Country,
