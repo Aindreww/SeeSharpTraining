@@ -26,11 +26,9 @@ namespace WebApplication1.Controllers {
         }
 
         // Update hotel by id
-        // If entity is deleted, this endpoint will reactivate it 
-        // Doesn't check if the hotel exists. In such case, makes a new hotel
-        // TODO: Reject updating if isDeleted = 1 and make another endpoint to reactivate it
+        
         [HttpPut]
-        [Route("UpdateHotelById")] // api/hotel/1
+        [Route("UpdateHotelById")] 
         public async Task<IActionResult> UpdateHotel(int id, [FromBody] HotelDto hotelDto)
         {
             var updatedHotel = await this.hotelService.UpdateHotel(id, hotelDto);
@@ -40,7 +38,7 @@ namespace WebApplication1.Controllers {
 
         // Get a specific hotel based on id
         [HttpGet]
-        [Route("GetHotelById")]  // api/hotel/1
+        [Route("GetHotelById")]  
         public async Task<IActionResult> GetHotelById(int id)
         {
             try
@@ -60,7 +58,7 @@ namespace WebApplication1.Controllers {
 
         // Get all active hotels
         [HttpGet]
-        [Route("GetAllActiveHotels")]  // api/getallactivehotels
+        [Route("GetAllActiveHotels")] 
         public async Task<IActionResult> GetAllActiveHotels()
         {
             var restultHotels = await this.hotelService.GetAllActiveHotels();

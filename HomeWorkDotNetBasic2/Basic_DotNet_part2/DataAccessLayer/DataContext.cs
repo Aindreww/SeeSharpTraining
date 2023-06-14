@@ -6,7 +6,7 @@ namespace WebApplication1.DataAccessLayer {
     public class DataContext : DbContext {
         private readonly IConfiguration configuration;
 
-        // Set the tables for our Database
+        
         public DbSet<Hotel> Hotels { get; set; } = default!;
         public DbSet<Room> Rooms { get; set; } = default!;
         public DbSet<Reservation> Reservations { get; set; } = default!;
@@ -32,9 +32,9 @@ namespace WebApplication1.DataAccessLayer {
             {
                 if (item.Entity is Hotel entity)
                 {
-                    // Set the entity to unchanged (if we mark the whole entity as Modified, every field gets sent to Db as an update)
+                    
                     item.State = EntityState.Unchanged;
-                    // Only update the IsDeleted flag - only this will get sent to the Db
+                  
                     entity.IsDeleted = true;
                 }
             }

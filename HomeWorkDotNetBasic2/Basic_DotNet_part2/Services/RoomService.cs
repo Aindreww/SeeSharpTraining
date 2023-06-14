@@ -24,7 +24,7 @@ namespace WebApplication1.Services {
             var room = await this.roomRepository.GetByIdAsync(id);
             if (room is null)
             {
-                throw new NotFoundException($"The room with the given id: '{id}' was not found");
+                throw new NotFoundException($"The room with the given id: '{id}' was not found!");
             }
 
             var mappedData = this.MapRoomData(room);
@@ -36,7 +36,7 @@ namespace WebApplication1.Services {
             var hotel = await this.roomRepository.GetByIdAsync(id);
             if (hotel is null)
             {
-                throw new NotFoundException($"The room with the given id: '{id}' was not found");
+                throw new NotFoundException($"The room with the given id: '{id}' was not found!");
             }
 
             await this.roomRepository.DeleteAsync(hotel);
